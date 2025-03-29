@@ -3,7 +3,7 @@
 
 int main() {
     // Exibe a mensagem "olá mundo!" e pula uma linha
-    printf("ola mundo!/n");
+    printf("ola brasil!/n");
 
     return 0;
 }
