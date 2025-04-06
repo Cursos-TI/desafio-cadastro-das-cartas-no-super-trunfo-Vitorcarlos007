@@ -10,6 +10,7 @@ int main() {
     float pib1;
     int pontosTuristicos1;
 
+    
     // Declaração das variáveis para os dados da carta 2
     char estado2;
     char codigo2[5];
@@ -19,18 +20,24 @@ int main() {
     float pib2;
     int pontosTuristicos2;
 
+    // **Cálculos dos novos atributos para a primeira carta 
+    float densidade1 = populacao1 / area1;          
+    float pib_per_capita1 = pib1 / populacao1;     
+
+    // **Cálculos dos novos atributos para a segunda carta 
+    float densidade2 = populacao2 / area2;          
+    float pib_per_capita2 = pib2 / populacao2;     
+
     // Entrada de dados para a carta 1
     printf("Digite os dados da carta 1:\n");
 
     printf("Estado: ");
-    scanf(" %c", &estado1); // Note que o espaço antes de %c é importante
-
+    scanf(" %c", &estado1); 
     printf("Código: ");
-    scanf("%s", codigo1); // Não há necessidade de espaço antes de %s
+    scanf("%s", codigo1); 
 
     printf("Cidade: ");
-    scanf(" %49[^\n]", cidade1); // Para ler uma linha inteira (até 49 caracteres)
-
+    scanf(" %49[^\n]", cidade1); 
     printf("População: ");
     scanf("%d", &populacao1);
 
@@ -47,7 +54,7 @@ int main() {
     printf("\nDigite os dados da carta 2:\n");
 
     printf("Estado: ");
-    scanf(" %c", &estado2); // Novamente, o espaço antes de %c
+    scanf(" %c", &estado2); 
 
     printf("Código: ");
     scanf("%s", codigo2);
